@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Student implements Methods {
+public class Student  {
     private String lastName;
     private String firstName;
     private int age;
@@ -59,72 +59,14 @@ public class Student implements Methods {
     }
 
     @Override
-    public void sortByLetter(ArrayList<Student> list, ArrayList<Student> startsWithA, ArrayList<Student> startsWithB) {
-        for (Student a:list) {
-            if (a.getFirstName().startsWith("A")){
-                startsWithA.add(a);
-            }
-            if (a.getFirstName().startsWith("B")){
-                startsWithB.add(a);
-            }
-        }
-        System.out.println("Students name starts with 'A': "+startsWithA);
-        System.out.println("Students name starts with 'B': "+startsWithB);
+    public String toString() {
+        return "Student{" +
+                "lastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", age=" + age +
+                ", money=" + money +
+                ", gender=" + gender +
+                '}';
     }
 
-    @Override
-    public void sortByMaxMoneyAndAge(ArrayList<Student> list, ArrayList<Student> AgeAndMoney) {
-        for (Student a:list) {
-
-        }
-    }
-
-    @Override
-    public void sortByMaxMoney(ArrayList<Student> list, ArrayList<Student> maxMoney) {
-        for (Student a:list) {
-
-        }
-    }
-
-    @Override
-    public void sortByMaxMoneyGirl(ArrayList<Student> list, ArrayList<Student> maxMoneyGirl) {
-        for (Student a:list) {
-
-        }
-    }
-
-    @Override
-    public void showsOnlyName(ArrayList<Student> list, ArrayList<Student> onlyName) {
-        for (Student a:list) {
-
-        }
-    }
-
-    @Override
-    public void addMoney1000(ArrayList<Student> list, ArrayList<Student> addMoney1000) {
-        for (Student a:list) {
-
-        }
-    }
-
-    @Override
-    public void firstStudent(ArrayList<Student> list, ArrayList<Student> firstStudent) {
-        for (Student a:list) {
-
-        }
-    }
-
-    @Override
-    public void quantityOfStudent(ArrayList<Student> list, ArrayList<Student> quantityOfStudent) {
-        for (Student a:list) {
-
-        }
-    }
-
-    @Override
-    public void BoysAndGirls(ArrayList<Student> list, ArrayList<Student> boys, ArrayList<Student> girls) {
-        for (Student a:list) {
-
-        }
-    }
 }
